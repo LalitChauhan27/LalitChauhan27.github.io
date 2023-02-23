@@ -35,8 +35,8 @@ async function handleSubmit(event) {
 }
 form.addEventListener("submit", handleSubmit);
 
-// FORM BORDERS 
-$("#contact-form input,#contact-form textarea").on("input focusin",(e)=>{
+// FORM BORDERS
+$("#contact-form input,#contact-form textarea").on("input focusin", (e) => {
   $(e.target).parent().addClass("focusIn");
   if ($(e.target).val().trim().length > 0) {
     $(e.target).parent().addClass("valid");
@@ -47,8 +47,8 @@ $("#contact-form input,#contact-form textarea").on("input focusin",(e)=>{
   }
 });
 
-$("#contact-form input,#contact-form textarea").on("focusout",(e)=>{
-    $(e.target).parent().removeClass("focusIn");
+$("#contact-form input,#contact-form textarea").on("focusout", (e) => {
+  $(e.target).parent().removeClass("focusIn");
 });
 
 // NAVIGATION PANEL
@@ -96,8 +96,8 @@ let education = document.getElementById("education");
 let work = document.getElementById("work");
 let educationheader = document.getElementById("educationheader");
 let workheader = document.getElementById("workheader");
-workheader.style.color = "var(--first-color)";
-educationheader.style.color = "var(--text-color)";
+workheader.style.color = "var(--text-color)";
+educationheader.style.color = "var(--first-color)";
 
 educationheader.addEventListener("click", () => {
   let condition1 = work.classList.contains("qualification-inactive");

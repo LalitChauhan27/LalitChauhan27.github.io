@@ -211,7 +211,7 @@ themeButton.addEventListener("click", () => {
 
 // Typing Animation using Typed JS
 var typed = new Typed(".type", {
-  strings: ["a Web Developer", "a Programmer", "a Gamer"],
+  strings: ["a Frontend", "a Backend", "a Fullstack"],
   smartBackspace: true,
   startDelay: 1000,
   typeSpeed: 130,
